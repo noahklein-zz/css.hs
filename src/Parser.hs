@@ -1,5 +1,5 @@
 module Parser (
-    csv
+    css
     ) where
 
 import Text.Parsec
@@ -8,8 +8,8 @@ import Control.Applicative hiding ((<|>), many, optional)
 
 import Types
 
-csv :: Parser [Ruleset]
-csv = ruleset `endBy` spaces
+css :: Parser [Ruleset]
+css = ruleset `endBy` spaces
 
 ruleset :: Parser Ruleset
 ruleset = do
