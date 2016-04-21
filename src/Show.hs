@@ -3,8 +3,6 @@ module Show (
     ) where
 
 import Types
-import Parser
-import Text.Parsec.String
 
 cssToString :: [Ruleset] -> String
 cssToString = concat . (map rulesetToString)
